@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet Hodar — VLSI and semiconductor enthusiast building digital design excellence through hands-on Verilog projects."
+    />
+    <title>Meet Hodar | VLSI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <div class="brand">
+          <span class="brand__logo">MH</span>
+          <span class="brand__text">Meet Hodar</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__content">
+          <div class="hero__text">
+            <p class="eyebrow">VLSI Innovator · Digital Design Enthusiast</p>
+            <h1>Crafting reliable silicon stories, one HDL project at a time.</h1>
+            <p class="hero__description">
+              I’m Meet Hodar, an aspiring VLSI engineer on a mission to master
+              Verilog/SystemVerilog through hands-on experimentation. From logic
+              gates to complex FSMs, I love translating ideas into waveforms
+              that work.
+            </p>
+            <div class="hero__cta">
+              <a
+                class="btn btn--primary"
+                href="https://www.linkedin.com/in/meet-hodar-2200b1284"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Connect on LinkedIn</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/ChipMeet/hdl-learning"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore My GitHub</a
+              >
+            </div>
+            <div class="hero__stats">
+              <div class="stat">
+                <span class="stat__number">10+</span>
+                <span class="stat__label">HDL Experiments</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">2</span>
+                <span class="stat__label">Years of Learning</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">100%</span>
+                <span class="stat__label">Hands-on Driven</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__card">
+            <div class="card__accent"></div>
+            <div class="card__body">
+              <h2>Design Focus</h2>
+              <ul>
+                <li>RTL design with Verilog &amp; SystemVerilog</li>
+                <li>Functional verification using Icarus &amp; GTKWave</li>
+                <li>Finite state machine modeling</li>
+                <li>Digital logic optimization</li>
+              </ul>
+              <p class="card__footer">
+                Always iterating. Always learning. Always building better logic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--light">
+        <div class="container grid-two">
+          <div class="section__heading">
+            <span class="eyebrow">About</span>
+            <h2>Fueling a VLSI dream with discipline and curiosity.</h2>
+          </div>
+          <div class="section__content">
+            <p>
+              My journey into semiconductors is anchored in the belief that great
+              hardware comes from relentless practice. I design, simulate, and
+              iterate on digital systems to understand how every gate shapes the
+              bigger picture. Each project in my
+              <a
+                href="https://github.com/ChipMeet/hdl-learning"
+                target="_blank"
+                rel="noopener noreferrer"
+                >hdl-learning</a
+              >
+              lab reinforces fundamentals while pushing me toward advanced RTL
+              design.
+            </p>
+            <div class="highlights">
+              <div class="highlight-card">
+                <h3>Hardware Mindset</h3>
+                <p>
+                  Skilled in translating real-world use cases into clean,
+                  testable HDL architecture with strong emphasis on reuse and
+                  modularity.
+                </p>
+              </div>
+              <div class="highlight-card">
+                <h3>Tooling Ready</h3>
+                <p>
+                  Daily driver of Icarus Verilog and GTKWave for fast iterations
+                  and waveform analysis. Comfortable in VS Code and Git-based
+                  workflows.
+                </p>
+              </div>
+              <div class="highlight-card">
+                <h3>Community Focused</h3>
+                <p>
+                  Open to collaborations, knowledge sharing, and contributing to
+                  open-source VLSI initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section__heading center">
+            <span class="eyebrow">Projects</span>
+            <h2>Hands-on HDL builds that sharpen my engineering edge.</h2>
+            <p>
+              Every project includes a dedicated testbench, simulations with
+              Icarus Verilog, and waveform validation in GTKWave.
+            </p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-card__status status--complete">Completed</div>
+              <h3>Half Adder</h3>
+              <p>
+                Designed to verify gate-level behavior and familiarize with
+                structural modeling in Verilog.
+              </p>
+              <ul>
+                <li>Structural modeling</li>
+                <li>Formal truth table validation</li>
+                <li>Reusable carry logic</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <div class="project-card__status status--complete">Completed</div>
+              <h3>Full Adder</h3>
+              <p>
+                Cascaded half-adders to achieve 3-bit addition with versatile
+                testbenches covering corner cases.
+              </p>
+              <ul>
+                <li>Behavioral modeling</li>
+                <li>Carry propagation checks</li>
+                <li>Waveform cross-verification</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <div class="project-card__status status--complete">Completed</div>
+              <h3>4:1 Multiplexer</h3>
+              <p>
+                Implemented data selection logic with focus on synthesizable
+                design and gate-level optimization.
+              </p>
+              <ul>
+                <li>Case statement coverage</li>
+                <li>Priority guard rails</li>
+                <li>Timing-friendly architecture</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <div class="project-card__status status--complete">Completed</div>
+              <h3>1:4 Demultiplexer</h3>
+              <p>
+                Built to validate signal distribution techniques with exhaustive
+                test scenarios and readable RTL style.
+              </p>
+              <ul>
+                <li>One-hot output verification</li>
+                <li>Enable signal gating</li>
+                <li>Parameterized testbench</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <div class="project-card__status status--inprogress">
+                In Progress
+              </div>
+              <h3>D Flip-Flop</h3>
+              <p>
+                Exploring sequential logic, metastability awareness, and reset
+                handling through detailed waveform inspection.
+              </p>
+              <ul>
+                <li>Edge-triggered design</li>
+                <li>Asynchronous reset trials</li>
+                <li>Glitch mitigation study</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <div class="project-card__status status--planned">Planned</div>
+              <h3>Traffic Light FSM</h3>
+              <p>
+                Upcoming state machine project to deepen control logic
+                expertise, with modular design and reusable states.
+              </p>
+              <ul>
+                <li>Finite-state modeling</li>
+                <li>Clock domain awareness</li>
+                <li>Scalable interface design</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--accent">
+        <div class="container">
+          <div class="section__heading center">
+            <span class="eyebrow">Skills</span>
+            <h2>Technical toolkit powering my digital design growth.</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skills-card">
+              <h3>Hardware Design</h3>
+              <div class="skill-chip">RTL Design</div>
+              <div class="skill-chip">FSM Modeling</div>
+              <div class="skill-chip">Testbench Development</div>
+              <div class="skill-chip">Timing Analysis</div>
+            </div>
+            <div class="skills-card">
+              <h3>Tools &amp; Platforms</h3>
+              <div class="skill-chip">Icarus Verilog</div>
+              <div class="skill-chip">GTKWave</div>
+              <div class="skill-chip">VS Code</div>
+              <div class="skill-chip">Git &amp; GitHub</div>
+            </div>
+            <div class="skills-card">
+              <h3>Programming</h3>
+              <div class="skill-chip">Verilog</div>
+              <div class="skill-chip">SystemVerilog</div>
+              <div class="skill-chip">C/C++ Basics</div>
+              <div class="skill-chip">Python for Automation</div>
+            </div>
+            <div class="skills-card">
+              <h3>Soft Skills</h3>
+              <div class="skill-chip">Documentation</div>
+              <div class="skill-chip">Collaboration</div>
+              <div class="skill-chip">Rapid Learning</div>
+              <div class="skill-chip">Problem Solving</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="section">
+        <div class="container">
+          <div class="section__heading center">
+            <span class="eyebrow">Journey</span>
+            <h2>Milestones shaping my path toward semiconductor design.</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline__line"></div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2023</span>
+                <h3>Kickstarted VLSI Exploration</h3>
+                <p>
+                  Started formal study of digital logic and HDL, building the
+                  foundation with combinational circuits and classic textbooks.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2024</span>
+                <h3>Launched HDL Learning Lab</h3>
+                <p>
+                  Created the
+                  <a
+                    href="https://github.com/ChipMeet/hdl-learning"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >hdl-learning</a
+                  >
+                  repository and documented each project with simulations and
+                  waveforms for knowledge sharing.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2025</span>
+                <h3>Expanding Into Sequential Design</h3>
+                <p>
+                  Deepening expertise in FSMs, clock domain management, and
+                  verification strategies while exploring industry-grade design
+                  patterns.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">Next</span>
+                <h3>Contribute to Industry Projects</h3>
+                <p>
+                  Ready to join a VLSI team, contribute to silicon design, and
+                  keep learning from experienced engineers and complex systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--dark">
+        <div class="container grid-two">
+          <div class="section__heading">
+            <span class="eyebrow">Contact</span>
+            <h2>Let’s collaborate on next-gen silicon.</h2>
+            <p>
+              Reach out for opportunities, knowledge sharing, or to discuss
+              exciting ideas in digital design and VLSI.
+            </p>
+            <div class="contact-links">
+              <a
+                class="contact-link"
+                href="mailto:hodarmeet99010@gmail.com"
+                >hodarmeet99010@gmail.com</a
+              >
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/meet-hodar-2200b1284"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                class="contact-link"
+                href="https://github.com/ChipMeet"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell me about your project or opportunity..."
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Send Message</button>
+            <p class="form-note">
+              *This form is a front-end concept. Use the email link to get in
+              touch directly.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__content">
+        <p>© <span id="year"></span> Meet Hodar. Built with curiosity and HDL.</p>
+        <div class="footer__links">
+          <a
+            href="https://www.linkedin.com/in/meet-hodar-2200b1284"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/ChipMeet/hdl-learning"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

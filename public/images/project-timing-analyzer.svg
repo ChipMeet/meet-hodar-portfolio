@@ -1,0 +1,41 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <linearGradient id="trace" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#2563EB" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="32" fill="url(#bg)" />
+  <g fill="#1E293B">
+    <rect x="60" y="60" width="680" height="400" rx="24" />
+    <rect x="60" y="460" width="680" height="20" rx="8" />
+  </g>
+  <g transform="translate(120,120)" fill="none" stroke-width="2">
+    <rect width="560" height="280" rx="16" stroke="rgba(148, 163, 184, 0.4)" />
+    <polyline
+      points="0,180 120,140 180,220 260,80 320,140 420,60 520,160 560,120"
+      stroke="url(#trace)"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+    />
+    <g stroke="rgba(96, 165, 250, 0.4)">
+      <line x1="80" y1="0" x2="80" y2="280" stroke-dasharray="8 12" />
+      <line x1="200" y1="0" x2="200" y2="280" stroke-dasharray="8 12" />
+      <line x1="320" y1="0" x2="320" y2="280" stroke-dasharray="8 12" />
+      <line x1="440" y1="0" x2="440" y2="280" stroke-dasharray="8 12" />
+    </g>
+  </g>
+  <g transform="translate(120,420)" fill="#38BDF8">
+    <rect width="80" height="24" rx="12" opacity="0.4" />
+    <rect x="100" width="120" height="24" rx="12" opacity="0.6" />
+    <rect x="240" width="160" height="24" rx="12" opacity="0.8" />
+  </g>
+</svg>
+

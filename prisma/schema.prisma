@@ -1,0 +1,30 @@
+// Prisma schema describing blog posts and contact messages for Meet Hodar's portfolio.
+// Uses SQLite locally for simple setup; Vercel will run with Prisma Data Proxy or PlanetScale if needed later.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Blog {
+  id        Int       @id @default(autoincrement())
+  title     String
+  slug      String    @unique
+  content   String
+  image     String?
+  tags      String[]  @default([])
+  createdAt DateTime  @default(now())
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+

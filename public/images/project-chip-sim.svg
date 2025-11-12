@@ -1,0 +1,37 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgChip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120" />
+      <stop offset="100%" stop-color="#1E40AF" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="32" fill="url(#bgChip)" />
+  <g stroke="#1E293B" stroke-width="2" opacity="0.6">
+    <rect x="48" y="48" width="704" height="424" rx="28" fill="#0F172A" />
+    <rect x="96" y="96" width="608" height="328" rx="24" fill="#111827" />
+  </g>
+  <rect x="160" y="160" width="480" height="200" rx="16" fill="#0EA5E9" opacity="0.15" />
+  <g transform="translate(196,196)" fill="#2563EB" stroke="#60A5FA" stroke-width="2">
+    <rect width="112" height="80" rx="12" />
+    <rect x="136" width="112" height="80" rx="12" />
+    <rect x="272" width="112" height="80" rx="12" />
+    <rect y="104" width="112" height="80" rx="12" />
+    <rect x="136" y="104" width="112" height="80" rx="12" />
+    <rect x="272" y="104" width="112" height="80" rx="12" />
+  </g>
+  <g transform="translate(160,140)" stroke="#38BDF8" stroke-width="3" stroke-linecap="round">
+    <line x1="0" y1="0" x2="0" y2="240" stroke-dasharray="10 12" opacity="0.4" />
+    <line x1="120" y1="0" x2="120" y2="240" stroke-dasharray="10 12" opacity="0.4" />
+    <line x1="240" y1="0" x2="240" y2="240" stroke-dasharray="10 12" opacity="0.4" />
+    <line x1="360" y1="0" x2="360" y2="240" stroke-dasharray="10 12" opacity="0.4" />
+    <line x1="480" y1="0" x2="480" y2="240" stroke-dasharray="10 12" opacity="0.4" />
+  </g>
+  <g transform="translate(140,420)" fill="#38BDF8" opacity="0.7">
+    <circle cx="0" cy="0" r="10" />
+    <circle cx="60" cy="0" r="10" />
+    <circle cx="120" cy="0" r="10" />
+    <circle cx="180" cy="0" r="10" />
+    <circle cx="240" cy="0" r="10" />
+  </g>
+</svg>
+
