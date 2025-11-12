@@ -11,14 +11,14 @@ datasource db {
 }
 
 model Blog {
-  id        Int       @id @default(autoincrement())
+  id        Int      @id @default(autoincrement())
   title     String
-  slug      String    @unique
   content   String
   image     String?
-  tags      String[]  @default([])
+  tags      String?   @default("")   // ✅ FIXED
   createdAt DateTime  @default(now())
 }
+
 
 model Message {
   id        Int      @id @default(autoincrement())
