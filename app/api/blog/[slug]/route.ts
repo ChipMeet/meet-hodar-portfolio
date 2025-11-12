@@ -11,8 +11,14 @@ type RouteContext = {
 
 export async function GET(_request: Request, { params }: RouteContext) {
   try {
+    // Since there's no slug field, use id instead
+    const id = parseInt(params.slug, 10);
+    if (isNaN(id)) {
+      return NextResponse.json({ error: 'Invalid post ID.' }, { status: 400 });
+    }
+
     const post = await prisma.blog.findUnique({
-      where: { slug: params.slug }
+      where: { id }
     });
 
     if (!post) {
@@ -31,8 +37,13 @@ export async function GET(_request: Request, { params }: RouteContext) {
 
 export async function PUT(request: Request, { params }: RouteContext) {
   try {
+    const id = parseInt(params.slug, 10);
+    if (isNaN(id)) {
+      return NextResponse.json({ error: 'Invalid post ID.' }, { status: 400 });
+    }
+
     const existing = await prisma.blog.findUnique({
-      where: { slug: params.slug }
+      where: { id }
     });
 
     if (!existing) {
@@ -43,7 +54,7 @@ export async function PUT(request: Request, { params }: RouteContext) {
     const parsed = blogUpdateSchema.parse(payload);
 
     const updated = await prisma.blog.update({
-      where: { slug: params.slug },
+      where: { id },
       data: parsed
     });
 
@@ -66,8 +77,13 @@ export async function PUT(request: Request, { params }: RouteContext) {
 
 export async function DELETE(_request: Request, { params }: RouteContext) {
   try {
+    const id = parseInt(params.slug, 10);
+    if (isNaN(id)) {
+      return NextResponse.json({ error: 'Invalid post ID.' }, { status: 400 });
+    }
+
     await prisma.blog.delete({
-      where: { slug: params.slug }
+      where: { id }
     });
 
     return NextResponse.json({ success: true });

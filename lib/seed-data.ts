@@ -1,9 +1,8 @@
 export const blogSeedPosts = [
   {
     title: 'Demystifying Timing Closure for High-Speed Designs',
-    slug: 'demystifying-timing-closure',
     image: '/images/blog-default.svg',
-    tags: ['timing', 'sta', 'flow'],
+    tags: 'timing,sta,flow',
     content: `
 ## Why timing closure matters
 
@@ -20,9 +19,8 @@ By the end, you should have a practical toolkit for closing timing without getti
   },
   {
     title: 'Crafting Reusable Verification IP for RISC-V SoCs',
-    slug: 'reusable-verification-ip-riscv',
     image: '/images/blog-default.svg',
-    tags: ['verification', 'riscv', 'uvm'],
+    tags: 'verification,riscv,uvm',
     content: `
 ## The challenge
 
@@ -39,9 +37,8 @@ If you are building open silicon, you will appreciate how these patterns keep te
   },
   {
     title: 'EDA Scripting Tips: Glueing Flows with Python & Tcl',
-    slug: 'eda-scripting-tips',
     image: '/images/blog-default.svg',
-    tags: ['automation', 'python', 'tcl'],
+    tags: 'automation,python,tcl',
     content: `
 ## Automate the boring bits
 

@@ -7,7 +7,7 @@ import { ProjectCard } from '@/components/ProjectCard';
 import { PostPreview } from '@/components/PostPreview';
 import { ContactForm } from '@/components/ContactForm';
 import { getAllPosts } from '@/lib/posts';
-import { SiVerilog, SiPython, SiDocker, SiGit, SiLinux, SiReact, SiJavascript, SiHtml5, SiCss3, SiC, SiTensorflow } from 'react-icons/si';
+import { SiPython, SiDocker, SiGit, SiLinux, SiReact, SiJavascript, SiHtml5, SiCss3, SiC, SiTensorflow } from 'react-icons/si';
 import { TbCircuitCapacitor } from 'react-icons/tb';
 import { LuCpu } from 'react-icons/lu';
 import { HiOutlineAcademicCap } from 'react-icons/hi2';
@@ -131,7 +131,7 @@ export default async function HomePage() {
           <SkillCard
             title="Verilog & Digital Design"
             description="RTL modules, finite state machines, and structural design patterns verified via thorough testbenches."
-            icon={<SiVerilog className="h-6 w-6" />}
+            icon={<TbCircuitCapacitor className="h-6 w-6" />}
           />
           <SkillCard
             title="Python & Tooling"

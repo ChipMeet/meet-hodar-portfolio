@@ -21,7 +21,7 @@ export async function GET(request: Request) {
     const skip = (page - 1) * limit;
 
     const where: Prisma.BlogWhereInput | undefined = tag
-      ? { tags: { has: tag } }
+      ? { tags: { contains: tag } }
       : undefined;
 
     const [posts, total] = await Promise.all([
