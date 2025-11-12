@@ -3,7 +3,7 @@ import { SectionHeader } from '@/components/SectionHeader';
 import { SkillRings } from '@/components/SkillRings';
 import { SkillCard } from '@/components/SkillCard';
 import {
-  SiVerilog,
+  SiVercel,
   SiPython,
   SiDocker,
   SiGit,
